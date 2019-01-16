@@ -26,7 +26,10 @@
     NSURLSession *session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:nil];
     NSURL *url = [NSURL URLWithString:@""]
     
+     url = [NSURL URLWithString:@""]
+
     
+    //dksnalfjdlsafl
     
 }
 
