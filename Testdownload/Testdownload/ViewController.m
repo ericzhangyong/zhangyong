@@ -30,7 +30,7 @@
 
     //123
     //dksnalfjdlsaflkjljh
-    
+//    0000
 }
 
 - (IBAction)btn_beginAction:(id)sender {
