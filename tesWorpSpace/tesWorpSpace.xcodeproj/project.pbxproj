@@ -14,9 +14,11 @@
 		C2118EBB21EF82870070DCB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2118EBA21EF82870070DCB3 /* Assets.xcassets */; };
 		C2118EBE21EF82870070DCB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2118EBC21EF82870070DCB3 /* LaunchScreen.storyboard */; };
 		C2118EC121EF82870070DCB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2118EC021EF82870070DCB3 /* main.m */; };
+		DF891F5E2337D8259DC3EFA4 /* libPods-tesWorpSpace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB1161EFC1A09CB893C1C079 /* libPods-tesWorpSpace.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A434F4175915C65433B409B /* Pods-tesWorpSpace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tesWorpSpace.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-tesWorpSpace/Pods-tesWorpSpace.debug.xcconfig"; sourceTree = "<group>"; };
 		C2118EAB21EF82860070DCB3 /* tesWorpSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tesWorpSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2118EAE21EF82860070DCB3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C2118EAF21EF82860070DCB3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -28,6 +30,8 @@
 		C2118EBD21EF82870070DCB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2118EBF21EF82870070DCB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2118EC021EF82870070DCB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DB1161EFC1A09CB893C1C079 /* libPods-tesWorpSpace.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tesWorpSpace.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2410A560A08CF93251EA165 /* Pods-tesWorpSpace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tesWorpSpace.release.xcconfig"; path = "../Pods/Target Support Files/Pods-tesWorpSpace/Pods-tesWorpSpace.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF891F5E2337D8259DC3EFA4 /* libPods-tesWorpSpace.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44FB094B8FB1C67876E8C440 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB1161EFC1A09CB893C1C079 /* libPods-tesWorpSpace.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE24631B5150F77340CDCFBF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A434F4175915C65433B409B /* Pods-tesWorpSpace.debug.xcconfig */,
+				E2410A560A08CF93251EA165 /* Pods-tesWorpSpace.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C2118EA221EF82860070DCB3 = {
 			isa = PBXGroup;
 			children = (
 				C2118EAD21EF82860070DCB3 /* tesWorpSpace */,
 				C2118EAC21EF82860070DCB3 /* Products */,
+				AE24631B5150F77340CDCFBF /* Pods */,
+				44FB094B8FB1C67876E8C440 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +105,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2118EC421EF82870070DCB3 /* Build configuration list for PBXNativeTarget "tesWorpSpace" */;
 			buildPhases = (
+				FFE758EAB01D97BE9C0FF287 /* [CP] Check Pods Manifest.lock */,
 				C2118EA721EF82860070DCB3 /* Sources */,
 				C2118EA821EF82860070DCB3 /* Frameworks */,
 				C2118EA921EF82860070DCB3 /* Resources */,
@@ -138,6 +163,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FFE758EAB01D97BE9C0FF287 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tesWorpSpace-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C2118EA721EF82860070DCB3 /* Sources */ = {
@@ -287,6 +333,7 @@
 		};
 		C2118EC521EF82870070DCB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A434F4175915C65433B409B /* Pods-tesWorpSpace.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +351,7 @@
 		};
 		C2118EC621EF82870070DCB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2410A560A08CF93251EA165 /* Pods-tesWorpSpace.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

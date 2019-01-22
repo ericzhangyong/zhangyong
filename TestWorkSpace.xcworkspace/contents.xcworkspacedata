@@ -10,4 +10,10 @@
    <FileRef
       location = "group:tesWorpSpace/tesWorpSpace.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:YHEnterpriseB2B/YHEnterpriseB2B.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
 </Workspace>

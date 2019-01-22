@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="PNg-nm-Otb" userLabel="FFLoadView" customClass="FFLoadView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4BT-Id-ntI">
+                    <rect key="frame" x="114.5" y="0.0" width="91" height="91"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="91" id="DBy-jU-CKe"/>
+                        <constraint firstAttribute="width" constant="91" id="SqA-AT-sqk"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="对不起,居然真的没有数据" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AG7-br-5gm">
+                    <rect key="frame" x="0.0" y="107" width="320" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.18039215689999999" green="0.66666666669999997" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="AG7-br-5gm" firstAttribute="leading" secondItem="PNg-nm-Otb" secondAttribute="leading" id="250-sd-VFv"/>
+                <constraint firstItem="AG7-br-5gm" firstAttribute="top" secondItem="4BT-Id-ntI" secondAttribute="bottom" constant="16" id="E3j-op-kfJ"/>
+                <constraint firstAttribute="trailing" secondItem="AG7-br-5gm" secondAttribute="trailing" id="ca0-xX-LOS"/>
+                <constraint firstItem="4BT-Id-ntI" firstAttribute="top" secondItem="PNg-nm-Otb" secondAttribute="top" id="eDw-kN-fDb"/>
+                <constraint firstItem="4BT-Id-ntI" firstAttribute="centerX" secondItem="PNg-nm-Otb" secondAttribute="centerX" id="x5e-Ow-DK6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="holdImageView" destination="4BT-Id-ntI" id="PwJ-7W-hQR"/>
+                <outlet property="holdLabel" destination="AG7-br-5gm" id="X1C-rp-iek"/>
+            </connections>
+        </view>
+    </objects>
+</document>
